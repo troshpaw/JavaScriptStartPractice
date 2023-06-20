@@ -18,9 +18,11 @@ const posts = [
 	{ postId: 6134, commentsQuantity: 2 },
 ]
 
-findPostById = (idPost, arrayPosts) => 
-    arrayPosts.forEach((idPost) => 
-        /*console.log(Object.values(this)[0])*/ console.log(idPost))
+const findPostById = (idPost, arrayPosts) => 
+	arrayPosts.forEach((post) => 
+		post.postId === idPost ? console.log(post) : 0)
+
+
 
 //console.log(findPostById(6134, posts)) // { postId: 6134, commentsQuantity: 2 }
 findPostById(6134, posts) // { postId: 6134, commentsQuantity: 2 }
