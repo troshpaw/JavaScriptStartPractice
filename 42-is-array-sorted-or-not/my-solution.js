@@ -21,7 +21,13 @@ const arraySortInfo = (array) => {
         return 'Некоторые элементы не являются числами'
     }
 
-    if (array.every((element, index) => {})) {
+    if (array.every((element, index) => {
+        if (index > 0) {
+            element[index] > element[index - 1]
+            console.log(element[index] > element[index - 1])
+        }
+    })) 
+    {
         return 'Массив отсортирован по возрастанию'
     }
 
