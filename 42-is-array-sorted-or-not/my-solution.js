@@ -22,16 +22,14 @@ const arraySortInfo = (array) => {
     }
 
     if (array.every((element, index) => {
-        if (index > 0) {
-            element[index] > element[index - 1]
-            console.log(element[index] > element[index - 1])
-        }
-    })) 
-    {
+        return index > 0 ? element >= array[index - 1] : true
+    })) {
         return 'Массив отсортирован по возрастанию'
     }
 
-    if (array.every((element, index) => {})) {
+    if (array.every((element, index) => {
+        return index > 0 ? element <= array[index - 1] : true
+    })) { 
         return 'Массив отсортирован по убыванию'
     }
 
