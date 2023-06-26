@@ -29,7 +29,8 @@ const isElementInArray = (searchElement, inputArray) => {
         // return inputArray.includes() // true - ???
     }
 
-    //
+    //return inputArray.includes(element => element.join(' ') === searchElement.join(' '))
+	return inputArray.map(element => JSON.stringify(element)).includes(JSON.stringify(searchElement))
 }
 
 console.log(isElementInArray(['css', 'flexbox'], tags)) // true
