@@ -1,2 +1,3 @@
 Полезные заметки:
 1. Ассосциативность и приоритетность операторов: https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_precedence
+2. Сортировка обектов по одному из свойств: упражнение 49.
