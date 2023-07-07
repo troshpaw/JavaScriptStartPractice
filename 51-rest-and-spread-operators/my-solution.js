@@ -19,13 +19,13 @@ const scores3 = [1.3, 2.5, 1.9]
 const scores4 = ['abc', 1.3, true, 2.5, 1.9]
 
 const meanScore = (...args) => {
-    console.log(...args)
+    return args.reduce((prevelement, element) => prevelement.concat(element), [])
 }
 
-console.log(meanScore(scores1, scores2))
 // console.log(meanScore(/* все элементы из массива "scores1" */))
 // 1.93
 
+console.log(meanScore(scores1, scores2))
 // console.log(meanScore(/* все элементы из массивов "scores1" и "scores2" */))
 // 2.8
 
