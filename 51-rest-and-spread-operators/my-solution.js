@@ -19,6 +19,19 @@ const scores3 = [1.3, 2.5, 1.9]
 const scores4 = ['abc', 1.3, true, 2.5, 1.9]
 
 const meanScore = (...args) => {
+    
+    args.some(elementArgs => {
+        if (typeof elementArgs !== 'number') {
+            console.error('Все аргументы в вызове функции должны быть числами!')
+        }
+    })
+    
+    /*
+    if (args.some(elementArgs => typeof elementArgs !== 'number')) {
+        return 'Все аргументы в вызове функции должны быть числами!'
+    }
+    */
+
     return args.reduce((prevelement, element) => {
         
         /*
@@ -27,8 +40,6 @@ const meanScore = (...args) => {
             console.log(element)
         }
         */
-
-        console.log(element)
         
         return prevelement.concat(element)
     }, [])
@@ -37,12 +48,11 @@ const meanScore = (...args) => {
 // console.log(meanScore(scores1))
 // 1.93
 
-console.log(meanScore(scores1, scores2))
+// console.log(meanScore(...scores1, ...scores2))
 // 2.8
-
 
 // console.log(meanScore(scores1, scores2, scores3))
 // 2.59
 
-// console.log(meanScore(/* все элементы из массива "scores4" */))
+console.log(meanScore(...scores4))
 // Все аргументы в вызове функции должны быть числами!
