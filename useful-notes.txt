@@ -2,3 +2,4 @@
 1. Ассосциативность и приоритетность операторов: https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_precedence
 2. Сортировка обектов по одному из свойств: упражнение 49.
 3. Операторы rest и spread: https://learn.javascript.ru/rest-parameters-spread-operator (упражнение 51).
+4. Дата: https://learn.javascript.ru/date
