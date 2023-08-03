@@ -3,4 +3,4 @@
 2. Сортировка обектов по одному из свойств: упражнение 49.
 3. Операторы rest и spread: https://learn.javascript.ru/rest-parameters-spread-operator (упражнение 51).
 4. Дата: https://learn.javascript.ru/date
-5. Деструктуризация: https://learn.javascript.ru/destructuring (упражнения 55, 56).
+5. Деструктуризация: https://learn.javascript.ru/destructuring (упражнения 55, 56, 69).
